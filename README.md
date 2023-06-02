@@ -33,7 +33,7 @@ find . -name '*.php' -exec grep -n -E -H -f ~/lib/phpbad {} \;
 ## Extra
 1. マッチしたファイルのパスと行数をひとつのファイルにして出力したいとき
 ```
-mkdir ./tmp && find . -name '*.php' -exec grep -n -E -H -f ~/lib/phpbad {} \; > ./tmp/file
+find . -name '*.php' -exec grep -n -E -H -f ~/lib/phpbad {} \; > ./psr_checked_file
 ```
 2. ファイルの行数もカウントできるよ
 ```
