@@ -1,0 +1,1 @@
+# project-psr-checker
