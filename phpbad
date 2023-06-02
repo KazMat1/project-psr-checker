@@ -1,0 +1,20 @@
+# ◆インデントはタブではなく空白
+^ *	
+# ◆if、for、foreach、while、switch、elseifに続く開き括弧の間に空白が必要
+(if|for|foreach|while|switch|elseif)\(
+# ◆括弧のすぐ内側には空白を開けない
+(\( | \))
+# ◆閉じカッコに続く中括弧の間には空白
+\){
+# ◆『 ,』、『 ;」がないこと
+ (,|;)
+# ◆カンマの後ろには空白をあける
+,[^ ]
+# ◆『else if』は使わずelseifにする
+else if
+# ◆do{、else{、try{、catch{、final{ がないこと。
+(do|else|try|catch|final)\{
+# ◆『//』の直後には空白をあける
+//[^ ]
+# ◆行末に空白やタブがあってはいけない
+[ 	]$
